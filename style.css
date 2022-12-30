@@ -33,6 +33,10 @@
    .gift-wrapper {
     font-size:80px;
    }
+   #countdown {
+    font-size: 45px;
+    z-index: 99!important;
+   }
   }
 
   .carousel {

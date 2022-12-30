@@ -40,7 +40,9 @@ a {
     width:20px;
   }
 
+
   .wrapper {
+    max-height:30vh;
     margin: 0em;
   }
   #memo {

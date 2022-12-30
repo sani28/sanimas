@@ -28,9 +28,12 @@ a {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .gift-wrapper {
-    font-size: 55px;
+    font-size: 40px;
+  }
+  #countdown{
+    font-size:30px!important;
   }
 }
 
@@ -372,7 +375,7 @@ hr {
 
 .bottom {
   padding: 2em;
-  min-height: 300px;
+  min-height: 300px!important;
 }
 
 #memo {

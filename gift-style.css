@@ -1,0 +1,349 @@
+@font-face {
+    font-family: apoloHairline;
+    src: url(./fonts/ApocLCTrial-Hairline.ttf);
+  }
+  @font-face {
+    font-family: apoloHairlineItalic;
+    src: url(./fonts/ApocLCTrial-HairlineItalic.ttf);
+  }
+
+  @font-face {
+    font-family: apoloDark;
+    src: url(./fonts/ApocLCTrial-Dark.otf);
+  }
+
+
+  @font-face {
+    font-family: apoloRegular;
+    src: url(././fonts/ApocLCTrial-Regular.otf);
+  }
+
+  @font-face {
+    font-family: apoloBoldItalic;
+    src: url(./fonts/ApocLCTrial-UltraBoldItalic.otf);
+  }
+
+  a {
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+  }
+
+
+  .carousel {
+    height: 156px;
+    padding:0 0 0 2px;
+    width: 100vw;
+  }
+
+  .carousel#carousel-responsive {
+    width: auto;
+  }
+  .carousel li, 
+  .carousel > div > div {
+    color: #fff;
+    /* padding:2px 0 2px 2px; */
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  .carousel span {
+    display: block;
+    height: 150px;
+    font-size: 100px;
+    line-height: 150px;
+    text-align: center;
+    width: 150px;
+  }
+  
+  .pulse{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: white;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    animation: animate-pulse 7s linear infinite;
+    cursor: pointer
+}
+@keyframes animate-pulse{
+    0%{
+        box-shadow: 0 0 0 0 rgba(212, 215, 213, 0.7),  0 0 0 0 rgba(232, 97, 97, 0.7);
+    }
+    40%{
+        box-shadow: 0 0 0 30px rgba(234, 68, 68, 0),  0 0 0 0 rgba(218, 212, 219, 0.7);
+    }
+    80%{
+        box-shadow: 0 0 0 30px rgba(255,109,74,0.0),  0 0 0 30px rgba(255,109,74,0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(255,109,74,0.0),  0 0 0 30px rgba(255,109,74,0);
+    }
+    
+}
+
+  @keyframes pulse {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+  
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+  overflow: hidden;
+  font-family: apoloRegular;
+  color: white!important;
+}
+
+#bg {
+    width:100vw;
+    height:100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.wrapper-gift {
+    margin:2.5em;
+    display: flex;
+    justify-self: center;
+    z-index: 1;
+    min-height:15vh;
+}
+
+.main {
+    z-index:2;
+    width:350px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    height:100vh;
+    font-size: 10px;
+    font-family: helvetica;
+    line-height: 200%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color:black;
+    font-kerning:normal;
+    height:max-content;
+}
+
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 100%;               
+    background-color:white;
+    height: 1px;
+    
+  }
+
+  #border-info {
+      bottom:2.5em;
+      right:2em;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      position: absolute;
+  }
+
+  #info {
+    top:10px;
+    right:20px;
+    position: absolute;
+}
+
+#back {
+  top:20px;
+  left:20px;
+  position: absolute;
+}
+
+
+  /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(126, 128, 227); /* Fallback color */
+  background-color: rgba(111, 111, 111, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width:400px;
+}
+
+#info-msg {
+  padding:0.5em;
+  line-height: 200%;
+  max-width:400px;
+  font-family: helvetica;
+  text-transform: uppercase;
+  font-size:11px;
+
+}
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+  
+  #countdown {
+      font-size:20px;
+      color:none;
+      bottom:0.5em;
+      left:2em;
+      font-style: italic;
+      display: block;
+      position: absolute;
+      height:max-content;
+  }
+
+  .friend-checker-wrapper {
+    display:flex;
+    position: fixed;
+    width:99vw;
+    height:max-content;
+    justify-content: center;
+    top:55vh;
+  }
+  .friend-checker {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "f1 f2 f3 f4"
+      "f5 f6 f7 f8"
+      "f9 f10 f11 f12";
+  }
+
+  .gift {
+      width:50px;
+      height:50px;
+  }
+
+  .friend-checker img {
+      width:60px;
+      padding:5px;
+  }
+
+  .gift:hover {
+    background-color:darkgray;
+  }
+  
+  .f1 { grid-area: f1; }
+  
+  .f2 { grid-area: f2; }
+  
+  .f3 { grid-area: f3; }
+  
+  .f4 { grid-area: f4; }
+  
+  .f5 { grid-area: f5; }
+  
+  .f6 { grid-area: f6; }
+  
+  .f7 { grid-area: f7; }
+  
+  .f8 { grid-area: f8; }
+  
+  .f9 { grid-area: f9; }
+  
+  .f10 { grid-area: f10; }
+  
+  .f11 { grid-area: f11; }
+  
+  .f12 { grid-area: f12; }
+  
+
+.friend-checker * {
+    position: relative;
+  }
+  
+  .friend-checker *:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #news-container
+  {
+      font-family: apoloHairlineItalic;
+      text-transform: uppercase;
+      text-align: justify;
+      font-kerning:normal;
+      letter-spacing:0.02em;
+      font-size:14px;
+      margin: auto;
+      
+  }
+  
+  #news-container ul li div {
+  }
+
+  .bottom {
+      padding:2em;
+      min-height:300px;
+  }
+
+  #memo {
+      max-width:360;
+      font-size:2.5em;
+      letter-spacing: 0.10em;
+      margin-top:200px;
+      align-self:center;
+      font-family: apoloBoldItalic;;
+      text-transform: uppercase;
+  }
+
+  #multivide {
+      bottom:40px;
+      right:30px;
+      position: absolute;
+  }
+
+  #multivide-logo {
+    margin-bottom:-10px;
+  }
+
+

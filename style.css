@@ -30,10 +30,24 @@ a {
 
 @media only screen and (max-width: 768px) {
   .gift-wrapper {
-    font-size: 40px;
+    font-size: 30px;
+  }
+
+  .border-info {
+    font-size:1px;
+  }
+  #multivide-logo{
+    width:20px;
+  }
+
+  .wrapper {
+    margin: 0em;
+  }
+  #memo {
+    margin-top:0px;
   }
   #countdown{
-    font-size:30px!important;
+    font-size:20px!important;
   }
 }
 

@@ -30,7 +30,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .gift-wrapper {
-    font-size: 30px;
+    font-size: 30px!important;
   }
 
   .border-info {
@@ -47,7 +47,7 @@ a {
     margin-top:0px;
   }
   #countdown{
-    font-size:20px!important;
+    font-size:18px!important;
   }
 }
 

@@ -34,6 +34,7 @@
     height: 156px;
     padding:0 0 0 2px;
     width: 100vw;
+    
   }
 
   .carousel#carousel-responsive {
@@ -52,11 +53,14 @@
   .carousel span {
     display: block;
     height: 150px;
-    font-size: 100px;
+    color:white;
+    font-size: 40px;
     line-height: 150px;
     text-align: center;
     width: 150px;
   }
+
+  
   
   .pulse{
     width: 100px;
@@ -188,12 +192,13 @@ hr {
 }
 
 /* Modal Content */
+/* Modal Content */
 .modal-content {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
-  max-width:400px;
+  max-width: max-content;
+  min-height:max-content;
 }
 
 #info-msg {
@@ -203,6 +208,7 @@ hr {
   font-family: helvetica;
   text-transform: uppercase;
   font-size:11px;
+  color:black;
 
 }
 /* The Close Button */

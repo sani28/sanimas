@@ -27,6 +27,8 @@ function windowResized() {
   }
 
 setup=()=> {
+
+
     var p5Canvas = createCanvas(windowWidth,windowHeight)
     p5Canvas.parent("bg");
     

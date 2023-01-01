@@ -242,9 +242,8 @@ hr {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
-  max-width: 340px;
-  height: 220px;
+  max-width: max-content;
+  min-height:max-content;
 }
 
 #info-msg {
@@ -272,11 +271,14 @@ hr {
 }
 
 #countdown {
-  font-size: 35px;
-  color: none;
+  font-size:20px;
+  color:none;
+  bottom:0.5em;
+  left:2em;
   font-style: italic;
   display: block;
-  height: max-content;
+  position: absolute;
+  height:max-content;
 }
 
 .friend-checker-wrapper {

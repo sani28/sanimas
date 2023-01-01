@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, 
-   initial-scale=1.00, maximum-scale=1.5, minimum-scale=0.75">
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -25,7 +23,7 @@
     </div>
 
     <div id="reflections">
-      <a href="index.html"><img src="./imgs/XXI.svg" /></a>
+      <a href="index.html"><img src="./imgs/xxi.svg" /></a>
     </div>
 
     <!-- The Modal -->
@@ -35,7 +33,12 @@
         <span class="close">&times;</span>
         <h1></h1>
         <p id="info-msg">
-          Wishing you rejuvinated '23 ♡ <br />
+          Christmas cards created with love <br>
+          in custom pattern generator I coded in p5.js ♡ <br />
+          Live demo of the pattern generator:
+          <br><a href="https://editor.p5js.org/sani28/sketches/IYAXXbbWf" style="color:black;font-weight: bolder;font-style: italic;text-decoration: underline;">Here</a><br><br>
+          <img src="./imgs/yousleigh.png" style="border-radius:30px;">
+          
         </p>
       </div>
     </div>
@@ -46,7 +49,7 @@
       /></span>
     </div>
 
-
+    <p id="countdown"></p>
     <div id="bg"></div>
     <div class="wrapper">
       <div id="memo">
@@ -58,17 +61,14 @@
           </b>
         </div>
         <div class="gift-wrapper">
-          <p style="max-width: 90%;">Thank you for being a light in my year.</p>
-
-           
-          </div>
-          <center><p id="countdown"></p></center>
+          <p style="max-width: 90%">Thank you for being a light in my year.</p>
+          <br /><br />
         </div>
-
+        <br />
 
         <div class="gift-wrapper">
           <div class="pulse">
-            <a href="gift.html"
+            <a href="memories.html"
               ><img src="./imgs/spark.svg" style="width: 100px"
             /></a>
           </div>
@@ -161,8 +161,8 @@
         var carouselVertical = new floatingCarousel("#carousel-vertical", {
           scrollerAlignment: "vertical",
           autoScroll: true,
-          scrollSpeed: "slow",
-          autoScrollSpeed: 100,
+          scrollSpeed: "fast",
+          autoScrollSpeed: 1000,
         });
       </script>
     </div>
